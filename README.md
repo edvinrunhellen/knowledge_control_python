@@ -26,7 +26,8 @@ cd knowledge_control_python
 ## Run streamlit app
 streamlit run app.py - (inside streamlit_app)
 
-🛠 Technologies Used
+
+## 🛠 Technologies Used
 
 Python 🐍
 
