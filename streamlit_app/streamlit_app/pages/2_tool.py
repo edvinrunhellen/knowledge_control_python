@@ -2,7 +2,9 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-st.title("Diamantanalys – Hitta fynd!")
+st.title("DiamondPicker")
+
+
 
 uploaded_file = st.file_uploader("Ladda upp din CSV-fil", type="csv")
 
@@ -66,7 +68,7 @@ if uploaded_file is not None:
     df['clarity'] = df['clarity'].astype(str).str.upper()
     df['color'] = df['color'].astype(str).str.upper()
 
-    # Mappa om cut
+    # Gör så att klassicifesringssystemet är konsekvent
     cut_mapping = {
         'Ideal': 'Excellent',
         'Premium': 'Excellent',
@@ -97,3 +99,4 @@ if uploaded_file is not None:
         st.write(f"**Total medianpris:** {total_median:,.2f} USD")
         st.write(f"**Potentiell vinst:** {difference:,.2f} USD")
         st.dataframe(results)
+
