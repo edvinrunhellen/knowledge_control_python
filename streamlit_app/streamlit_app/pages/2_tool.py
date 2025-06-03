@@ -73,6 +73,7 @@ if uploaded_file is not None:
         'Ideal': 'Excellent',
         'Premium': 'Excellent',
         'Very Good': 'Very Good',
+        'Excellent': 'Excellent',
         'Good': 'Good',
         'Fair': 'Fair',
         'Poor': 'Poor',

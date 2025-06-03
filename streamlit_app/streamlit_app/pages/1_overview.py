@@ -181,7 +181,7 @@ ax.grid(axis='y')
 
 st.pyplot(fig)
             
-st.subheader("5. Diamanter >10% under medianpris")
+st.subheader("5. Diamanter <10% under medianpris")
 
 median_dict = median_prices.set_index("carat_interval")["price"].to_dict()
 
@@ -203,7 +203,7 @@ for idx, row in filtered.iterrows():
             "price": price,
             "interval": interval,
             "median": median,
-            "threshold_90pct": median * 0.90
+            "buy for:": median * 0.90
         })
 
 # Konvertera till DataFrame
