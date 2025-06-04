@@ -107,7 +107,7 @@ filtered = df_under_1ct[
 ]
 
 
-df = pd.read_csv("data/diamonds.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/edvinrunhellen/DiamondLens/v2/streamlit_app/streamlit_app/data/diamonds.csv")
 df = df[(df['x'] > 0) & (df['y'] > 0) & (df['z'] > 0)]
 
 # Standardisera 'cut'
