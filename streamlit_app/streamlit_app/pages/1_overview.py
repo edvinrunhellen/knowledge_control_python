@@ -91,7 +91,7 @@ st.write("Efter att ha studerat marknaden har vi identifierat att attributen col
 st.subheader("3. Volatilitet i priser i olika caratintervall 0.2-0.5")
 
 # Läs in datan
-df = pd.read_csv("data/diamonds.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/edvinrunhellen/DiamondLens/v2/streamlit_app/streamlit_app/data/diamonds.csv")
 df = df[(df['x'] > 0) & (df['y'] > 0) & (df['z'] > 0)]
 
 # Filtrera till diamanter <= 0.5 ct
