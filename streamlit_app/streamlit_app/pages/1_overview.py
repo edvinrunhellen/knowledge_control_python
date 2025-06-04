@@ -41,6 +41,13 @@ st.markdown("""
 5. Analysen har beräknat underprissatta diamanter i dessa caratintervall.  
 """)
 
+st.markdown("""
+**Datakvalite**
+- Vissa värden i x, y, z kolumnerna innehåller inga värden/0/NAN. Utan dimensioner kan diamanten inte fysiskt existera. Dessa ska exkluderas i beräkningarna. Vi gör också en kontroll att dimensionerna överensstämmer med caraten: Carat ≈ (x * y * z) * 0.0061
+- Vissa värden är icke numeriska. För att utföra beräkningar och eventuellt i framtiden träna en modell på datan bör vi omvandla datan till numeriska. 
+- Blandade värden i cut kolumnen. Kan resultera i inkonsekventa resultat. Vi behöver omvandla värdena till ett enskilt klassificeringssystem. Vi kommer använda den mest standardiserade skalan: GIA:s Cut Grade.
+            """)
+
 st.subheader("1. Genomsnittligt pris per carat per caratintervall")
 
 

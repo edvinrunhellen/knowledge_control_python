@@ -7,7 +7,7 @@ import streamlit as st
 
 st.header("Översikt över dataset: /data/diamonds.csv")
 
-st.write("Notera att datan inte är hanterad efter datakvalite")
+st.write("Notera att datan inte är hanterad efter datakvalite. Detta är endast en översikt över det råa datasetet.")
 
 
 # GitHub raw URL till CSV-filen
